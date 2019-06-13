@@ -10,6 +10,7 @@ import Components from "views/Components/Components.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import ReservationPage from "views/Reservation/ReservationPage.jsx";
+import Reservations from "./views/Components/Reservations/index";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
 import Welcome from "./components/Welcome";
 
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
+      <Route path="/reservations" component={Reservations} />
       <Route path="/reservation-page" component={ReservationPage} />
       <Route path="/login-page" component={LoginPage} />
       <Route exact path="/" component={Welcome} />

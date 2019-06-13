@@ -16,13 +16,13 @@ render() {
     return (       
         <div>
         <Button type="button" color="warning"onClick = {()=>this.props.history.push("/reservation-page")}>
-                Reservation
+                Story
               </Button>
               <Button type="button" color="warning" onClick = {()=>this.props.history.push("/landing-page")}>
                 About Us
               </Button>
-              <Button type="button" color="warning">
-                Reservation
+              <Button type="button" color="warning" onClick = {()=>this.props.history.push("/reservations")}>
+              Reservations
               </Button>
             <SectionCarousel />
             <headerStyle />
