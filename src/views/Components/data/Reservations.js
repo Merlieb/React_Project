@@ -4,23 +4,23 @@ const reservations = {
       name: "Hotel Room",
      image: "/img/Deca.jpg",
       desc:
-        "If you want a Standard room with Air conditioner. Cable TV,Hairdryer, Bathroom with hot shower, Telephone, Safety deposit box ($), Internet, Amenities: soap, shampoo and conditioner, Iron and ironing board (on request and at no additional cost), Mini refrigerator.",
-      price: 80,
+        "If you want a Standard room with Air conditioner. Cable TV,Hairdryer, Bathroom with hot shower, Telephone(*), Safety deposit box ($), Internet, Amenities: soap, shampoo and conditioner, Iron and ironing board (on request and at no additional cost), Mini refrigerator.",
+      price: 372,
       status: "available"
     },
   
     reservation2: {
       name: "Spa",
-      image:"/img/Deca.jpg",
+      image:"/img/deca_spa.jpg",
       desc:
-        "These tender, mouth-watering beauties are a fantastic hit at any dinner party.",
+        "A journey to the heart of your emotions, a real massage for a total release of the 3 big reflex zones: the head, the hands and the feet. The body is re-toned and the mind calmed. In an hour of time",
       price: 100,
       status: "available"
     },
   
     reservation3: {
       name: "Pool",
-     image:"/img/Deca.jpg",
+     image:"/img/deca_pool.jpg",
       desc:
         "Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound",
       price: 40,
@@ -29,7 +29,7 @@ const reservations = {
   
     reservation4: {
       name: "Beach",
-     image:"/img/Deca.jpg",
+     image:"/img/deca_beach.jpg",
       desc:
         "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakes. ",
       price: 58,
@@ -37,8 +37,8 @@ const reservations = {
     },
   
     reservation5: {
-      name: "Metting",
-      image:"/img/Deca.jpg",
+      name: "Meetting",
+      image:"/img/deca_metting.jpg",
       desc:
         "Crack these open and enjoy them plain or with one of our cocktail sauces",
       price: 150,
@@ -47,10 +47,10 @@ const reservations = {
   
     reservation6: {
       name: "Other",
-     image:"/img/Deca.jpg",
+     image:"/img/deca_other.jpg",
       desc:
         "This flaky, oily salmon is truly the king of the sea. Bake it, grill it, broil it...as good as it gets!",
-      price: 133,
+      price: 0,
       status: "unavailable"
     }
 

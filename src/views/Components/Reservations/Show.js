@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "components/CustomButtons/Button.jsx";
 
 
 class Show extends React.Component{
@@ -8,12 +9,12 @@ class Show extends React.Component{
         return ( 
                    
                     <tr>
-                        <td><img width={50} src ={image} /></td>
-                        <td>{name}</td>
-                        <td>{desc}</td>
-                        <td>{price}</td>
+                        <td><img width={150} src ={image} /></td>
+                        <td><h4>{name}</h4></td>
+                        <td><h5>{desc}</h5></td>
+                        <td><h6>{price}</h6></td>
             
-                        <button disabled={!isAvailable} onClick={() => (this.props.addToOrder(this.props.reservationkey))}>{isAvailable ? "Add To Order" : "Solde out!"}</button>
+                        <Button color="facebook"  disabled={!isAvailable} onClick={() => (this.props.addToOrder(this.props.reservationkey))}>{isAvailable ? "Add To Order" : "Solde out!"}</Button>
                     </tr> 
         )
         

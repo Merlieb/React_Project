@@ -41,7 +41,7 @@ class Order extends React.Component{
                         )
                     })}
                     <hr/>
-                    Total : {total} US$
+                  <h2>  Total : {total} US$</h2>
                 </div>
         )
         
