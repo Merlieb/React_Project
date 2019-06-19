@@ -17,7 +17,7 @@ import image4 from "assets/img/home4.jpg";
 import image5 from "assets/img/home5.jpg";
 import image6 from "assets/img/home6.jpg";
 import image7 from "assets/img/home7.jpg";
-import image8 from "assets/img/home8.jpg";
+// import image8 from "assets/img/home8.jpg";
 
 class SectionCarouselBis extends React.Component {
   render() {

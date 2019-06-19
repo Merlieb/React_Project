@@ -13,6 +13,7 @@ import ReservationPage from "views/Reservation/ReservationPage.jsx";
 import Reservations from "./views/Components/Reservations/index";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
 import Welcome from "./components/Welcome";
+import LandingPageBis from "./views/LandingPage/LandingPageBis";
 
 var hist = createBrowserHistory();
 
@@ -20,6 +21,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
+      <Route path="/landing-page-bis" component={LandingPageBis} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/reservations" component={Reservations} />
       <Route path="/reservation-page" component={ReservationPage} />

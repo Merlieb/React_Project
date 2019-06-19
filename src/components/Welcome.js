@@ -8,10 +8,11 @@ import GridItem from "../components/Grid/GridItem.jsx";
 import HeaderLinksHome from "../components/Header/HeaderLinksHome.jsx";
 import Parallax from "../components/Parallax/Parallax.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
-
-
-import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
+import SectionJavascriptBis from "../views/Components/Sections/SectionJavascriptBis.jsx";
 import SectionCarouselBis from "../views/Components/Sections/SectionCarouselBis.jsx";
+import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
+import Index from "../views/Calendar/Index.js"
+import WorkSectionBis from "../views/LandingPage/Sections/WorkSectionBis";
 
 class Welcome extends React.Component{
 render() {
@@ -29,7 +30,7 @@ render() {
           }}
           {...rest}
         />
-           <Parallax image={require("assets/img/Deca.jpg")}>
+           <Parallax image={require("assets/img/deca_home.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
@@ -44,9 +45,10 @@ render() {
           </div>
         </Parallax>
 
-       
-            <SectionCarouselBis />
+        {/* <SectionJavascriptBis /> */}
+            {/* <SectionCarouselBis /> */}
             <headerStyle />
+            <WorkSectionBis />
         </div>
     );
     }

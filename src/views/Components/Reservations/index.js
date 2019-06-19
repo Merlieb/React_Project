@@ -10,6 +10,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import reservationsPageStyle from "../../../assets/jss/material-kit-react/views/reservationsPage.jsx";
 import image from "assets/img/Deca.jpg";
 import HeaderLinksHome from "../../../components/Header/HeaderLinksHome";
+import WorkSectionTriple from "../../LandingPage/Sections/WorkSectionTriple";
 const TableStyled = styled.table`
     width: 70%;
     box-sizing: border-box;
@@ -92,6 +93,7 @@ class Reservations extends React.Component {
                 </TableStyled>
            
               <Order reservations= {this.reservations} order={this.state.order}/>
+              <WorkSectionTriple />
             </div>
         </div>
       </div>        

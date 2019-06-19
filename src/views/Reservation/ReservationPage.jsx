@@ -17,7 +17,7 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-// import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/home1.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -31,6 +31,8 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import reservationPageStyle from "assets/jss/material-kit-react/views/reservationPage.jsx";
+import WorkSectionTriple from "../LandingPage/Sections/WorkSectionTriple";
+import HeaderLinksServices from "../../components/Header/HeaderLinksServices";
 
 class ReservationPage extends React.Component {
   render() {
@@ -46,7 +48,7 @@ class ReservationPage extends React.Component {
         <Header
           color="transparent"
           brand="Merlie Hotel"
-          rightLinks={<HeaderLinks />}
+          rightLinks={<HeaderLinksServices history={this.props.history} />}
           fixed
           changeColorOnScroll={{
             height: 200,
@@ -54,20 +56,21 @@ class ReservationPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/Deca.jpg")} />
+        <Parallax small filter image={require("assets/img/home6.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <div>
+        <div>
             <div className={classes.container}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={6}>
                   <div className={classes.profile}>
                     <div>
-                      {/* <img src={profile} alt="..." className={imageClasses} /> */}
+                      <img src={profile} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
                       <h1 className={classes.title}>Reservation</h1>
-                      {/* <h6>DESIGNER</h6> */}
-                      {/* <Button justIcon link className={classes.margin5}>
+{/*                       
+                      <h4>DESIGNER</h4> 
+                      <Button justIcon link className={classes.margin5}>
                         <i className={"fab fa-twitter"} />
                       </Button>
                       <Button justIcon link className={classes.margin5}>
@@ -80,135 +83,58 @@ class ReservationPage extends React.Component {
                   </div>
                 </GridItem>
               </GridContainer>
-              <div className={classes.description}>
-                <p>
-                Pale de special
-                  {/* {" "} */}
-                </p>
-              </div>
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                  <NavPills
-                    alignCenter
-                    color="primary"
-                    tabs={[
-                      {
-                        tabButton: "Studio",
-                        tabIcon: Camera,
-                        tabContent: (
-                          <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4}>
-                              {/* <img
-                                alt="..."
-                                src={studio1}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={studio2}
-                                className={navImageClasses}
-                              />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
-                              <img
-                                alt="..."
-                                src={studio5}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={studio4}
-                                className={navImageClasses}
-                              /> */}
-                            </GridItem>
-                          </GridContainer>
-                        )
-                      },
-                      {
-                        tabButton: "Work",
-                        tabIcon: Palette,
-                        tabContent: (
-                          <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4}>
-                              {/* <img
-                                alt="..."
-                                src={work1}
-                                className={navImageClasses}
-                              /> */}
-                              {/* <img
-                                alt="..."
-                                src={work2}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={work3}
-                                className={navImageClasses}
-                              />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
-                              <img
-                                alt="..."
-                                src={work4}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={work5}
-                                className={navImageClasses}
-                              /> */}
-                            </GridItem>
-                          </GridContainer>
-                        )
-                      },
-                      {
-                        tabButton: "Favorite",
-                        tabIcon: Favorite,
-                        tabContent: (
-                          <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4}>
-                              {/* <img
-                                alt="..."
-                                src={work4}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={studio3}
-                                className={navImageClasses}
-                              /> */}
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
-                              {/* <img
-                                alt="..."
-                                src={work2}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={work1}
-                                className={navImageClasses}
-                              />
-                              <img
-                                alt="..."
-                                src={studio1}
-                                className={navImageClasses}
-                              /> */}
-                            </GridItem>
-                          </GridContainer>
-                        )
-                      }
-                    ]}
-                  />
-                </GridItem>
-              </GridContainer>
-            </div>
+    <div>
+        <form>
+            <h4>INCLUDES</h4>
+            <ul>
+            <li>Accommodation</li>
+            <li>Breakfast and buffet lunch.</li> 
+            <li>Meals a la carte in a specialized restaurants (must be booked in advance).</li>
+            <li>Snacks.</li>
+            <li>Alcoholic and non-alcoholic drinks locally produced at will.</li>
+            <li>Recreational activities for adults and children.</li>
+            <li>Shows and live music.</li>
+            <li>Non motorized water sports</li>
+            <li>Tourist tax included</li>
+           </ul>
+           <hr/>
+
+           <h4>NOT INCLUDED</h4>
+           <ul>
+            <li>Transport</li>
+            <li>Phone calls</li>
+            <li>Laundry</li>
+            <li>Safe</li>
+            <li>Medical services</li>
+            <li>Pharmaceuticals</li>
+            <li>Excursions and other expenses not specified in the program</li>
+            </ul>
+            <hr/>
+
+            <h4>COMMERCIAL CONDITIONS</h4>
+            <ul>
+              <li>Minimum stay of 2 nights.</li>
+              <li>Package valid per person per night in a double room.</li>
+              <li>Children's rates apply for children from 2 to 11 years sharing a minimum of a double room with 2 adults or a single room with an adult.</li>
+              <li>Package includes tourist taxes and hotel insurance.</li>
+              <li>Check In: 15:00</li>
+              <li>Check Out: 13:00</li>
+              <li>Arrivals before check-in time or check-outs after check-out time will be subject to an additional charge at the discretion of the hotel.</li>
+              <li>Rates are indicative and subject to change.</li>
+            </ul>
+            <hr/>
+            For more information contact us:
+            </form>
+            </div>       
+           </div>
           </div>
-        </div>
-        <Footer />
+          <WorkSectionTriple />
+          </div>
+        {/* <Footer /> */}
       </div>
     );
   }
 }
 
 export default withStyles(reservationPageStyle)(ReservationPage);
+
