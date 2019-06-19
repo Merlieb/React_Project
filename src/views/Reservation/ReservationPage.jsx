@@ -67,7 +67,7 @@ class ReservationPage extends React.Component {
                       <img src={profile} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
-                      <h1 className={classes.title}>Reservation</h1>
+                      <h1 className={classes.title}>Services</h1>
 {/*                       
                       <h4>DESIGNER</h4> 
                       <Button justIcon link className={classes.margin5}>

@@ -12,7 +12,7 @@ import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
+
 import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
@@ -23,6 +23,7 @@ import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 import WorkSectionTriple from "./Sections/WorkSectionTriple.jsx";
 import TeamSectionbis from "./Sections/TeamSectionbis.jsx";
+import HeaderLinksAllInclusive from "../../components/Header/HeaderLinksAllInclusive.jsx";
 
 const dashboardRoutes = [];
 
@@ -34,8 +35,8 @@ class LandingPageBis extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
-          rightLinks={<HeaderLinks />}
+          brand="Merlie Hotel"
+          rightLinks={<HeaderLinksAllInclusive history={this.props.history} />}
           fixed
           changeColorOnScroll={{
             height: 400,

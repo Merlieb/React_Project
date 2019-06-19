@@ -18,7 +18,7 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
-function HeaderLinksHome({ ...props }) {
+function HeaderLinksServices({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
@@ -50,6 +50,11 @@ function HeaderLinksHome({ ...props }) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+            <Button type="button" color= "transparent" onClick = {()=>props.history.push("/")}>
+            Home
+            </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
             <Button type="button" color= "transparent" onClick = {()=>props.history.push("/reservation-page")}>
             Services
             </Button>
@@ -59,11 +64,7 @@ function HeaderLinksHome({ ...props }) {
             All Inclusive
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button type="button" color= "transparent" onClick = {()=>props.history.push("/reservations")}>
-            Reservations
-        </Button>
-      </ListItem>
+      
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
@@ -85,4 +86,4 @@ function HeaderLinksHome({ ...props }) {
   );
 }
 
-export default withStyles(headerLinksStyle)(HeaderLinksHome);
+export default withStyles(headerLinksStyle)(HeaderLinksServices);

@@ -11,7 +11,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import SectionJavascriptBis from "../views/Components/Sections/SectionJavascriptBis.jsx";
 import SectionCarouselBis from "../views/Components/Sections/SectionCarouselBis.jsx";
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
-import Index from "../views/Calendar/Index.js"
 import WorkSectionBis from "../views/LandingPage/Sections/WorkSectionBis";
 
 class Welcome extends React.Component{
@@ -48,7 +47,7 @@ render() {
         {/* <SectionJavascriptBis /> */}
             {/* <SectionCarouselBis /> */}
             <headerStyle />
-            <WorkSectionBis />
+            {/* <WorkSectionBis /> */}
         </div>
     );
     }

@@ -18,7 +18,7 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
-function HeaderLinksHome({ ...props }) {
+function HeaderLinksAllInclusive({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
@@ -50,14 +50,14 @@ function HeaderLinksHome({ ...props }) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-            <Button type="button" color= "transparent" onClick = {()=>props.history.push("/reservation-page")}>
-            Services
+            <Button type="button" color= "transparent" onClick = {()=>props.history.push("/")}>
+            Home
             </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button type="button" color= "transparent" onClick = {()=>props.history.push("/landing-page-bis")}>
-            All Inclusive
-        </Button>
+            <Button type="button" color= "transparent" onClick = {()=>props.history.push("/reservation-page")}>
+            Services
+            </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button type="button" color= "transparent" onClick = {()=>props.history.push("/reservations")}>
@@ -85,4 +85,4 @@ function HeaderLinksHome({ ...props }) {
   );
 }
 
-export default withStyles(headerLinksStyle)(HeaderLinksHome);
+export default withStyles(headerLinksStyle)(HeaderLinksAllInclusive);

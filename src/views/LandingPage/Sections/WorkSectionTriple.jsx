@@ -9,72 +9,52 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
+import messages from '../../Components/data/messages';
 
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 
-class WorkSectionBis extends React.Component {
+class WorkSectionTriple extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name:"",
+      email:"", 
+      message:""
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({[event.target.name]: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+    messages.push(this.state);
+    console.log(messages)
+  }
+
   render() {
-    const { classes } = this.props;
     return (
-      <div className={classes.section}>
-        <GridContainer justify="center">
-          <GridItem cs={12} sm={12} md={8}>
-            {/* <h2 className={classes.title}>Work with us</h2> */}
-            {/* <h4 className={classes.description}>
-              Divide details about your product or agency work into parts. Write
-              a few lines about each one and contact us about any further
-              collaboration. We will responde get back to you in a couple of
-              hours.
-            </h4> */}
-            <form>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Your Name"
-                    id="name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Your Email"
-                    id="email"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <CustomInput
-                  labelText="Your Message"
-                  id="message"
-                  formControlProps={{
-                    fullWidth: true,
-                    className: classes.textArea
-                  }}
-                  inputProps={{
-                    multiline: true,
-                    rows: 5
-                  }}
-                />
-                <GridContainer justify="center">
-                  <GridItem
-                    xs={12}
-                    sm={12}
-                    md={4}
-                    className={classes.textCenter}
-                  >
-                    <Button color="primary">Send Message</Button>
-                  </GridItem>
-                </GridContainer>
-              </GridContainer>
-            </form>
-          </GridItem>
-        </GridContainer>
-      </div>
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <label>
+          Email:
+          <input type="text" name="email" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <label>
+          Message:
+          <input type="text" name="message" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
     );
   }
 }
-
-export default withStyles(workStyle)(WorkSectionBis);
+export default withStyles(workStyle)(WorkSectionTriple);

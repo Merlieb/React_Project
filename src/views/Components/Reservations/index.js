@@ -9,8 +9,10 @@ import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 import reservationsPageStyle from "../../../assets/jss/material-kit-react/views/reservationsPage.jsx";
 import image from "assets/img/Deca.jpg";
-import HeaderLinksHome from "../../../components/Header/HeaderLinksHome";
 import WorkSectionTriple from "../../LandingPage/Sections/WorkSectionTriple";
+import HeaderLinksReservations from "../../../components/Header/HeaderLinksReservations";
+import WorkSectionBis from "../../LandingPage/Sections/WorkSectionBis";
+import WorkSection from "../../LandingPage/Sections/WorkSection";
 const TableStyled = styled.table`
     width: 70%;
     box-sizing: border-box;
@@ -68,7 +70,7 @@ class Reservations extends React.Component {
                     absolute
                     color="transparent"
                     brand="Merlie Hotel"
-                    rightLinks={<HeaderLinksHome history={this.props.history} />}
+                    rightLinks={<HeaderLinksReservations history={this.props.history} />}
                     {...rest}
             />
             <div

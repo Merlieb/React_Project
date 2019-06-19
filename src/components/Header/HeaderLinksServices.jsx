@@ -25,7 +25,7 @@ function HeaderLinksServices({ ...props }) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Companies"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -73,7 +73,7 @@ function HeaderLinksServices({ ...props }) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="https://www.instagram.com/malou__beli/"
             target="_blank"
             className={classes.navLink}
           >
