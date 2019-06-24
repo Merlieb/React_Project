@@ -1,15 +1,8 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
-// @material-ui/icons
-
-// core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import messages from '../../Components/data/messages';
+import axios from "axios";
 
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 
@@ -33,11 +26,15 @@ class WorkSectionTriple extends React.Component {
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
-    messages.push(this.state);
-    console.log(messages)
+   
+    const { name, email, message } = this.state;
+    fetch('https://jsonplaceholder.typicode.com/todos/1',{name , email, message})
+       .then(response => response.json())
+        .then(json => console.log(json))
   }
 
   render() {
+    const { name, email, message } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
         <label>

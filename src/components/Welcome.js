@@ -44,10 +44,8 @@ render() {
           </div>
         </Parallax>
 
-        {/* <SectionJavascriptBis /> */}
-            {/* <SectionCarouselBis /> */}
             <headerStyle />
-            {/* <WorkSectionBis /> */}
+            <WorkSectionBis />
         </div>
     );
     }

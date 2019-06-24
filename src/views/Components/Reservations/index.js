@@ -13,6 +13,7 @@ import WorkSectionTriple from "../../LandingPage/Sections/WorkSectionTriple";
 import HeaderLinksReservations from "../../../components/Header/HeaderLinksReservations";
 import WorkSectionBis from "../../LandingPage/Sections/WorkSectionBis";
 import WorkSection from "../../LandingPage/Sections/WorkSection";
+import ReactContactForm from 'react-mail-form';
 const TableStyled = styled.table`
     width: 70%;
     box-sizing: border-box;
@@ -96,6 +97,7 @@ class Reservations extends React.Component {
            
               <Order reservations= {this.reservations} order={this.state.order}/>
               <WorkSectionTriple />
+              {/* <ReactContactForm to="merline15.mb@gmail.com" /> */}
             </div>
         </div>
       </div>        
