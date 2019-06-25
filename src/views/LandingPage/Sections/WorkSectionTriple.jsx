@@ -1,10 +1,17 @@
 import React from "react";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import messages from '../../Components/data/messages';
 import axios from "axios";
-
+import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
+import styled from 'styled-components';
+
+const Input = styled.input`
+  width: 90%;
+  padding: 8px 16px;
+  margin: 5px 0;
+  box-sizing: border-box;
+`
 
 class WorkSectionTriple extends React.Component {
   constructor(props) {
@@ -26,11 +33,15 @@ class WorkSectionTriple extends React.Component {
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
-   
-    const { name, email, message } = this.state;
-    fetch('https://jsonplaceholder.typicode.com/todos/1',{name , email, message})
-       .then(response => response.json())
-        .then(json => console.log(json))
+    const name = this.state.name
+    const email = this.state.email
+    const message = this.state.message
+    console.log(messages);
+    axios.post('/t/rib7k-1561470398/post', { name, email, message })
+          .then((response) => {
+              console.log(response);
+             
+          });
   }
 
   render() {
@@ -38,18 +49,15 @@ class WorkSectionTriple extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Name:
-          <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
+          <Input type="text" name="name" placeholder="Name" value={this.state.value} onChange={this.handleChange} />
         </label>
         <label>
-          Email:
-          <input type="text" name="email" value={this.state.value} onChange={this.handleChange} />
+          <Input type="text" name="email" placeholder="Email" value={this.state.value} onChange={this.handleChange} />
         </label>
         <label>
-          Message:
-          <input type="text" name="message" value={this.state.value} onChange={this.handleChange} />
+          <Input type="text" name="message" placeholder="Message" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="Submit" />
+        <Button color="facebook" type="submit" value="Submit">Submit</Button>
       </form>
     );
   }

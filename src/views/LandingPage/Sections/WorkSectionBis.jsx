@@ -18,7 +18,7 @@ class WorkSectionBis extends React.Component {
             <h4 className={classes.description}>
             if you want to change our plans or our reservation services call us:
             <br/>
-             +509 40714534
+             <p><a href="mailto: merline@noukod.com">merline@noukod.com</a></p>
             </h4>
           </GridItem>
         </GridContainer>

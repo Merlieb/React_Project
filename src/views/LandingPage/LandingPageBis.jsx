@@ -24,6 +24,8 @@ import WorkSection from "./Sections/WorkSection.jsx";
 import WorkSectionTriple from "./Sections/WorkSectionTriple.jsx";
 import TeamSectionbis from "./Sections/TeamSectionbis.jsx";
 import HeaderLinksAllInclusive from "../../components/Header/HeaderLinksAllInclusive.jsx";
+import TeamSectionTriple from "./TeamSectionTriple.jsx";
+import WorkSectionBis from "./Sections/WorkSectionBis.jsx";
 
 const dashboardRoutes = [];
 
@@ -74,10 +76,11 @@ class LandingPageBis extends React.Component {
           <div className={classes.container}>
             {/* <ProductSection /> */}
             <TeamSectionbis />
-            <WorkSectionTriple />
+            <TeamSectionTriple/>
+            <WorkSectionBis />
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
