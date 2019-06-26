@@ -39,16 +39,17 @@ class TeamSection extends React.Component {
                   <img src={team1} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                    Guided tour
+                Entertainment
                   <br />
                   <small className={classes.smallTitle}></small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                  At Merlie Hotel, there is entertainment for everyone. 
+                  We offer you a wide range of activities for all tastes and for all ages:
+                  aerobics, tennis, diving classes, dance, 
+                  non-motorized water sports and all the
+                  recreational activities to make your vacation unforgettable.
                   </p>
                 </CardBody>
               </Card>
@@ -88,16 +89,16 @@ class TeamSection extends React.Component {
                   <img src={team3} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Kendall Jenner
+                  Festivity
                   <br />
                   {/* <small className={classes.smallTitle}>Model</small> */}
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                  With us, days and nights are always full of joy.
+                  Enjoy our casinos, live music, reggae or merengue bars,
+                  mariachis, games and contests. Later, a meeting in the discotheque
+                  at the open bar and the DJ who dances the track until the early morning.
                   </p>
                 </CardBody>
               </Card>

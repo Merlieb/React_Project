@@ -16,9 +16,9 @@ import CardFooter from "components/Card/CardFooter.jsx";
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 
-import team1 from "assets/img/faces/visiteg.jpg";
-import team2 from "assets/img/faces/avion.jpg";
-import team3 from "assets/img/faces/festival.jpg";
+import team1 from "assets/img/faces/plani.jpg";
+import team2 from "assets/img/faces/home1.jpg";
+import team3 from "assets/img/faces/piscine-et-plage.jpg";
 
 class TeamSection extends React.Component {
   render() {
@@ -45,10 +45,9 @@ class TeamSection extends React.Component {
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                  in partnership with the Ministry of Tourism,
+                  we will guide you on our place and also 
+                  on the tourist sites of the country.
                   </p>
                 </CardBody>
               </Card>
@@ -59,24 +58,16 @@ class TeamSection extends React.Component {
                   <img src={team2} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                Tourist
+                Accommodation
                   <br />
                   <small className={classes.smallTitle}></small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    Air tickets, 
-                    transfers,
-                    Accommodation,
-                    Unlimited restoration,
-                    Buffet and snacks,
-                    Specialized restaurants,
-                    Unlimited drinks and liqueurs,
-                    Shows every day,
-                    The most beautiful beaches,
-                    Open bar,
-                    Recreational activities,
-                    Non-motorized water sports.
+                  
+                  Each of our rooms is equipped with all the necessary amenities
+                  to make your stay pleasant and make you live a unique experience of relaxation,
+                  rest and comfort. It's time to give you the rest you deserve!
                    
                   </p>
                 </CardBody>
@@ -88,16 +79,17 @@ class TeamSection extends React.Component {
                   <img src={team3} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Kendall Jenner
+                  Beaches and Swimming Pools
                   <br />
                   {/* <small className={classes.smallTitle}>Model</small> */}
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                  In our hotels, you will know the most beautiful beaches 
+                  and swimming pools for children and adults
+                  synonymous with rest and relaxation,
+                  where you will be able to fully enjoy
+                  magnificent landscapes and views that you will never forget.
                   </p>
                 </CardBody>
               </Card>

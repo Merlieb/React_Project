@@ -32,12 +32,27 @@ function HeaderLinksHome({ ...props }) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
-            <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
+            <a
+              href="https://5coinspv.business.site/"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Restaurant 5 coins
+            </a>,
+            <a
+              href="https://www.clubsportif777.com/"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Club Sportif 
+            </a>,
+            <a
+              href="https://www.touslesfestivals.com/agenda"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Festi-Agenda
+            </a>,
             <a
               href="https://www.thalasso-saintmalo.com/fr/soins-spa/"
               target="_blank"

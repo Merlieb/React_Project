@@ -2,7 +2,7 @@
 const reservations = {
     reservation1: {
       name: "Hotel Room",
-     image: "/img/Deca.jpg",
+     image: "/img/deca_room.jpg",
       desc:
         "If you want a Standard room with Air conditioner. Cable TV,Hairdryer, Bathroom with hot shower, Telephone(*), Safety deposit box ($), Internet, Amenities: soap, shampoo and conditioner, Iron and ironing board (on request and at no additional cost), Mini refrigerator.",
       price: 372,
@@ -22,8 +22,8 @@ const reservations = {
       name: "Pool",
      image:"/img/deca_pool.jpg",
       desc:
-        "Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound",
-      price: 40,
+        "Our pools are available as well as the children's pools with limited consumption conditions. Contact us for more information.",
+      price: 35,
       status: "available"
     },
   
@@ -31,8 +31,8 @@ const reservations = {
       name: "Beach",
      image:"/img/deca_beach.jpg",
       desc:
-        "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakes. ",
-      price: 58,
+        "Our most beautiful beaches are available no need to reserve a room for this, you will be able to fully enjoy magnificent landscapes and views that you will never forget for a day including consumption.",
+      price: 50,
       status: "available"
     },
   
@@ -40,7 +40,7 @@ const reservations = {
       name: "Meetting",
       image:"/img/deca_metting.jpg",
       desc:
-        "Crack these open and enjoy them plain or with one of our cocktail sauces",
+        "Reserved rooms for meeting conferences with projectors, TV, Air conditioner, internet ...",
       price: 150,
       status: "available"
     },
@@ -49,7 +49,7 @@ const reservations = {
       name: "Other",
      image:"/img/deca_other.jpg",
       desc:
-        "This flaky, oily salmon is truly the king of the sea. Bake it, grill it, broil it...as good as it gets!",
+        "Other services such as wedding reservations, graduation, or other ceremonies are also available. Call us: +509 40995677 for more information...",
       price: 0,
       status: "unavailable"
     }

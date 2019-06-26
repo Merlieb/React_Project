@@ -1,15 +1,14 @@
 import React from "react";
-import Button from "../components/CustomButtons/Button.jsx";
+
 import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
+
 import GridContainer from "../components/Grid/GridContainer.jsx";
 import GridItem from "../components/Grid/GridItem.jsx";
 // import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinksHome from "../components/Header/HeaderLinksHome.jsx";
 import Parallax from "../components/Parallax/Parallax.jsx";
 import withStyles from "@material-ui/core/styles/withStyles";
-import SectionJavascriptBis from "../views/Components/Sections/SectionJavascriptBis.jsx";
-import SectionCarouselBis from "../views/Components/Sections/SectionCarouselBis.jsx";
+
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 import WorkSectionBis from "../views/LandingPage/Sections/WorkSectionBis";
 

@@ -16,8 +16,8 @@ class WorkSectionBis extends React.Component {
           <GridItem cs={12} sm={12} md={8}>
             <h2 className={classes.title}>Contact Our</h2>
             <h4 className={classes.description}>
-            if you want to change our plans or our reservation services call us:
-            <br/>
+            If you wish to modify the plans or our reservation services,
+            to have more explanation on the plans, write to us:            <br/>
              <p><a href="mailto: merline@noukod.com">merline@noukod.com</a></p>
             </h4>
           </GridItem>
